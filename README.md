@@ -3,11 +3,8 @@
 This package contains the files
 
 FortranMitoNuclear.f90
-
 MitoNuclear.jpynb
-
 readme.txt (this file)
-
 
 In order to use the jupyter notebook you need to compile the Fortran files. To do that
 open a terminal in the folder containing the files and give the following commands:
@@ -17,9 +14,7 @@ and
 f2py -c --fcompiler=gnu95 -m FortranTree FortranTree.f90 
 
 These commands should generate the corresponding ".so" files that are called from python.
-
 Make sure you have python installed, together with the packages numpy, matplotlib, jupyter and jupyterlab. 
-
 Open the notebook with the command
 
 jupiter-lab MitoNuclear.jpynb
