@@ -2,8 +2,6 @@
 
 ! f2py -c --fcompiler=gnu95 -m FortranMitoNuclear FortranMitoNuclear.f90
 
-! Debora Princepe & Marcus A.M. de Aguiar  - 21/Dec/2019
-
 ! Uses hard walls boundary conditions
 ! Number of individuals grows until N(t) >= N
 ! sex separation in vector s()
