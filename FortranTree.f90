@@ -2,8 +2,6 @@
 
 ! f2py -c --fcompiler=gnu95 -m FortranTree FortranTree.f90
 
-! Debora Princepe & Marcus A.M. de Aguiar  - 21/Dec/2019
-
 ! generates genealogical tree from the time matrix
 ! uses average distances to groups
 ! computes gamma, alpha and sackin indexes
