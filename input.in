@@ -1,0 +1,35 @@
+10         1000       100     100
+0.00025     0.00075    0.02    0.37
+5.0         75         1500    500      4     3
+0           0          20      0  
+50          80         60      90
+0.025
+
+T           N          L1       L2
+mut         mut-mit    diff     qmat
+S           G          B        BM      P    nrmax  
+IREAD       INISBIT    njump    nmax
+iini        ifin       jini     jfin
+width
+
+
+T = number of generations
+N = pop size
+L1 and L2 = sides of the rectangle, L1 >= L2
+mut = nuclear mutation rate
+mut-mit = mitochondrial mutation rate
+diff = diffusion coefficient
+qmat = model parameter (reproduction phase)
+S = radius of the mating neighborhood
+G = genetic threshold for reproduction
+B = nuclear genome size
+BM = mitochondrial genome size
+
+
+INISBIT 0 = random position
+INISBIT 1 = localized
+IREAD = 0 --starts new run
+IREAD = 1 --read a file pop-someting.dat and continues from there
+nmax = maximum population size
+nmax = 0 -> maximum is N
+iini, ifin, jini, jfin = coordinates for localized distribution of individuals
