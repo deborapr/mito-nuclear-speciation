@@ -1,4 +1,4 @@
-! Program MitoNuclearSP.f90
+! Program FortranMitoNuclear.f90
 
 ! Debora Princepe, Marcus A.M. de Aguiar and Josh B. Plotkin - 08/Nov/2021
 
