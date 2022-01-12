@@ -42,3 +42,4 @@ The plots of the manuscript were based on an ensemble of 50 runs for each value 
    - subs_rate.ipynb    
    _Histograms of the number of substituions in the nuclear and mitochondrial genomes (Supplementary Material)_
   
+  REFERENCE: _"Mito-nuclear selection induces a trade-off between species ecological dominance and evolutionary lifespan"_ Débora Princepe, Marcus A. M. de Aguiar, Joshua B. Plotkin. arXiv:2111.04866 (2021) https://arxiv.org/abs/2111.04866
