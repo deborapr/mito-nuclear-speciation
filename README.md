@@ -1,27 +1,44 @@
 # mito-nuclear-speciation
 
-This package contains the files
+The simulation can be run from the file **FortranMitoNuclear.f90**. The parameters for the simulation are set in the file **input.in**. The files **seed.in** and **forbiden-sites.in** are also necessary for the simulation. The code is prepared to be run in a loop. All output files will be stored in an individual folder for each realization. The outputs are:
 
-FortranMitoNuclear.f90
-MitoNuclear.jpynb
-readme.txt (this file)
+   - pop-new.dat  
+   _saves the simulation parameters and genomes (nuclear and mitochondrial) and positions of all individuals of the population at the final generation_
+   
+   - ext-sizes.dat  
+   _records the time step each species disappeared, the abundance when it disappeared and a marker for the class of event_
+   
+   - global_abundances.dat  
+   _records abundances of all species at all generations_
 
-In order to use the jupyter notebook you need to compile the Fortran files. To do that
-open a terminal in the folder containing the files and give the following commands:
+   - global_parents.dat     
+   _records the mother species of all species at all generations_
+   
+   - number0.dat  
+   _contains the number of species at each generation_
 
-f2py -c --fcompiler=gnu95 -m FortranMitoNuclear FortranMitoNuclear.f90
-and
-f2py -c --fcompiler=gnu95 -m FortranTree FortranTree.f90 
+Other Fortran files to be run are:
 
-These commands should generate the corresponding ".so" files that are called from python.
-Make sure you have python installed, together with the packages numpy, matplotlib, jupyter and jupyterlab. 
-Open the notebook with the command
+   - dist-intra.f90   
+   _computes the nuclear and mitochondrial genetic similarities within each species_
 
-jupiter-lab MitoNuclear.jpynb
+   - dist-inter.f90   
+   _calculates nuclear and mitochondrial genetic distances between pair of individuals of different species_
+   
+   - count-mut.f90    
+   _counts the number of mutations in the nuclear and mitochondrial DNA's_
+  
+The plots of the manuscript were based on an ensemble of 50 runs for each value of mito-nuclear selection strenght. The data analysis made Python notebooks are contained in the files:
 
-and run the three modules separately. The first will run the evolution program. The
-second will plot the population in space, using different colours for different species.
-The third will generate the phylogenetic tree and compute the gamma, alpha and Sackin indices.
-The tips of the tree will have circles coloured according to the species it represents, with
-the same color code used to plot the population. Colors are listed in the file mycolors.py and can
-be edited by the user.
+   - sp_hyb_ext_rates.ipynb   
+   _calculation of the rates of diversification (Fig. 2)_
+
+   - SAD_lfspan.ipynb   
+   _Species Abundances Distributions and distribution of species' lifespan and fates (Fig. 3)_
+   
+   - gen_diversity.ipynb  and   gen_div_mito-supp.ipynb   
+   _Nuclear genetic distances within and between species (Fig. 4) and mitochondrial genetic distances (Supplementary Material)_
+   
+   - subs_rate.ipynb    
+   _Histograms of the number of substituions in the nuclear and mitochondrial genomes (Supplementary Material)_
+  
