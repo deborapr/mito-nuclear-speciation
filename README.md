@@ -28,7 +28,7 @@ Other Fortran files to be run are:
    - count-mut.f90    
    _counts the number of mutations in the nuclear and mitochondrial DNA's_
   
-The plots of the manuscript were based on an ensemble of 50 runs for each value of mito-nuclear selection strenght. The data analysis made Python notebooks are contained in the files:
+The plots of the manuscript were based on an ensemble of 50 runs for each value of mito-nuclear selection strenght. The data analysis made in Jupyter notebooks (Python) are contained in the files:
 
    - sp_hyb_ext_rates.ipynb   
    _calculation of the rates of diversification (Fig. 2)_
