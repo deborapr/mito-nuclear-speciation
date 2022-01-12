@@ -34,10 +34,10 @@ The plots of the manuscript were based on an ensemble of 50 runs for each value 
    _calculation of the rates of diversification (Fig. 2)_
 
    - SAD_lfspan.ipynb   
-   _Species Abundances Distributions and distribution of species' lifespan and fates (Fig. 3)_
+   _Species Abundances Distributions and distribution of species' lifespan and fates (Fig. 3 and Fig. 4)_
    
    - gen_diversity.ipynb  and   gen_div_mito-supp.ipynb   
-   _Nuclear genetic distances within and between species (Fig. 4) and mitochondrial genetic distances (Supplementary Material)_
+   _Nuclear genetic distances within and between species (Fig. 5) and mitochondrial genetic distances (Supplementary Material)_
    
    - subs_rate.ipynb    
    _Histograms of the number of substituions in the nuclear and mitochondrial genomes (Supplementary Material)_
